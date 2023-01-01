@@ -1,3 +1,9 @@
+/*----
+getElementById()	        trả về phần tử có giá trị id đã cho.
+getElementsByName()	      trả về tất cả các phần tử có giá trị name đã cho.
+getElementsByTagName()	  trả về tất cả các phần tử có tên thẻ đã cho.
+getElementsByClassName()	trả về tất cả các phần tử có class đã cho.
+----*/
 
 
 function newElement() {
