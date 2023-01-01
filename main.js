@@ -1,45 +1,4 @@
-// const toDolist = []
-// function add(){
 
-//     let item_txt = document.getElementById('txt').value ;
-//     if (item_txt){
-//         toDolist.unshift({
-//             name: item_txt
-//         })
-//         console.log(toDolist);
-//         document.getElementById('txt').value = ""
-//         event.preventDefault(); // ngăn load lại trang
-//     }
-// }
-// function addtoDo(toDolist){
-
-// let li = document.createElement('li')
-// li.innerHTML = `
-//     <span>${todo.name}</span>
-//     <i class="far fa-trash-alt"></i>
-//     `
-//     toDolist.appendChild(li)
-// }
-
-// let item_input = document.querySelector('#txt')
-// let item_button = document.querySelector('button')
-
-// item_button.addEventListener('click', function() {
-//     if(!item_input.value){
-//         alert('Vui lòng điền nội dung')
-//         return false
-//     }
-
-//     let toDolist = []
-
-//     toDolist.push({ name:item_input.value})
-
-//     console.log(toDolist);
-//     item_input.value = '' //cleared nội dung vừa nhập
-//     event.preventDefault();
-//     rendertoDolist(toDolist);
-    
-// })
 
 function newElement() {
     let li = document.createElement("li"); // tạo thẻ li
@@ -71,20 +30,3 @@ function newElement() {
       }
     }
   }
-
-
-
-
-
-// function rendertoDolist(toDolist = []){
-    // let content = '<ul>';
-    // toDolist.forEach(todo => {
-    //     content += `<li>${todo.name}
-    //     <i class="far fa-trash-alt"></i>
-    //     </li?` 
-
-    // })
-
-    // content += '</ul>' ;
-    // document.querySelector('.todo').innerHTML = content
-// }
