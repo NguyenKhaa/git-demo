@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #C0C0C0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 800px;
+    margin: 50px auto;
+    background-color: rgb(240, 235, 235);
+    padding-top: 10px 0px;
+    border-radius: 6px;
+}
+
+.container--form{
+    border-bottom: 1px solid #aaa;
+    padding: 10px 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    font-size: 26px;
+    width: 100%;
+    margin-right: 18px;
+    border: none;
+    outline: none;
+}
+
+button{
+    background: gray;
+    padding: 8px 18px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+}
+
+.todo{
+    list-style: none;
+    justify-content: space-between;
+}
+
+.todo li{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    font-size: 26px;
+}
+
+.todo li span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
