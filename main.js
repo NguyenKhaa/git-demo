@@ -37,7 +37,6 @@ function newElement() {
     for (let i = 0; i < close.length; i++) { // lặp qua các button để lấy chính xác thằng đc click
       var parent = this.parentElement;  // chỏ tới thằng cha (li)
       parent.remove();
-      console.log(this);
     }
     
   }
