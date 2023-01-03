@@ -7,8 +7,8 @@ getElementsByClassName()	trả về tất cả các phần tử có class đã c
 
 
 function newElement() {
-    let li = document.createElement("li"); // tạo thẻ li
     let inputValue = document.getElementById("txt").value; //lấy ra giá trị input
+    let li = document.createElement("li"); // tạo thẻ li
     let t = document.createTextNode(inputValue);    //tạo ra 1 textnode để lưu gt input
     li.appendChild(t); // nối textnode vào bên trong thẻ li
     if (inputValue === '') {
@@ -26,19 +26,18 @@ function newElement() {
     span.className = "close"; // thêm class cho span
     span.appendChild(i); // nối i vào span
     li.appendChild(span); //nối span vào li
-  
-    //dele
+    span.addEventListener('click', deleElement); // thêm sk vào nút xóa
     
   }
 
   function deleElement(){
-    
+
     let close = document.getElementsByClassName("close"); // lấy tất cả El có class là Close
     
-    for (let i = 0; i < close.length; i++) { // khởi tạo i =0; điều kiện để chạy;  length: độ dài mảng
-      close[i].onclick = function() { // bắt được i nào được click vào thì chạy hàm dưới
-        var M = this.parentElement; //tạo ra 1 biến --> chỏ tới thằng cha của i 
-        M.style.display = "none";
-      }
+    for (let i = 0; i < close.length; i++) { // lặp qua các button để lấy chính xác thằng đc click
+      var parent = this.parentElement;  // chỏ tới thằng cha (li)
+      parent.remove();
+      console.log(this);
     }
+    
   }
