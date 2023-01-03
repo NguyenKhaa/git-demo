@@ -5,7 +5,6 @@ getElementsByTagName()	  trả về tất cả các phần tử có tên thẻ �
 getElementsByClassName()	trả về tất cả các phần tử có class đã cho.
 ----*/
 
-
 function newElement() {
     let inputValue = document.getElementById("txt").value; //lấy ra giá trị input
     let li = document.createElement("li"); // tạo thẻ li
@@ -18,8 +17,7 @@ function newElement() {
     }
     document.getElementById("txt").value = ""; 
 
-    
-  //--tạo ra icon thùng rác--
+    //--tạo ra icon thùng rác--
     let span = document.createElement("span"); //tạo ra 1 span
     let i = document.createElement("i"); //tạo ra 1 thher i
     i.className = ('far fa-trash-alt'); // thêm 1 className cho i
