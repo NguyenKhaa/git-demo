@@ -18,6 +18,7 @@ function newElement() {
     }
     document.getElementById("txt").value = ""; 
 
+    
   //--tạo ra icon thùng rác--
     let span = document.createElement("span"); //tạo ra 1 span
     let i = document.createElement("i"); //tạo ra 1 thher i
@@ -27,6 +28,11 @@ function newElement() {
     li.appendChild(span); //nối span vào li
   
     //dele
+    
+  }
+
+  function deleElement(){
+    
     let close = document.getElementsByClassName("close"); // lấy tất cả El có class là Close
     
     for (let i = 0; i < close.length; i++) { // khởi tạo i =0; điều kiện để chạy;  length: độ dài mảng
