@@ -5,7 +5,7 @@ getElementsByTagName()	  trả về tất cả các phần tử có tên thẻ �
 getElementsByClassName()	trả về tất cả các phần tử có class đã cho.
 ----*/
 
-function addTask() {
+function createTask() {
     let inputValue = document.getElementById("txt").value; //lấy ra giá trị input
     let li = document.createElement("li"); // tạo thẻ li
     let t = document.createTextNode(inputValue);    //tạo ra 1 textnode để lưu gt input
