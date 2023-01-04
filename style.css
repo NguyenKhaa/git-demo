@@ -41,10 +41,11 @@ button{
     font-weight: bold;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .todo{
-    list-style: none;
+    list-style: none; 
     justify-content: space-between;
 }
 
@@ -61,3 +62,8 @@ button{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.close {
+    cursor: pointer;
+}
+
